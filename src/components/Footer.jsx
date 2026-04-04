@@ -30,7 +30,7 @@ const Footer = () => (
       <div className="flex items-center gap-3">
         <span className="text-gray-700 text-xs flex items-center gap-1.5">Created with <span className="text-red-500 text-lg">♥</span> by</span>
         <Link 
-          to="https://moguldesign.agency" 
+          to="https://moguldesignagency.com" 
           target="_blank"
           className="border border-gray-800 bg-black rounded-full px-5 py-2 flex items-center gap-3 hover:border-green-600 transition group"
         >
