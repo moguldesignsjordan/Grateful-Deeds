@@ -34,10 +34,6 @@ const Donate = () => {
         <button className="w-full bg-black text-white py-5 rounded-2xl font-bold hover:bg-green-700 transition-all shadow-lg shadow-black/10">
           Continue to Secure Payment
         </button>
-        
-        <p className="text-center text-[10px] text-gray-400 mt-6 uppercase tracking-widest">
-          Grateful Deeds Inc. is a registered non-profit organization.
-        </p>
       </div>
     </div>
   );
