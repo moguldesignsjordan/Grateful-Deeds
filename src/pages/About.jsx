@@ -2,7 +2,16 @@ import React from 'react';
 import { motion } from 'framer-motion';
 
 const About = () => {
-  // THREE TEAM MEMBERS (Removing Jordan)
+  const values = [
+    { title: "Compassion", desc: "We serve with empathy, kindness, and genuine care for every child and family in need." },
+    { title: "Gratitude", desc: "We believe every act of kindness matters. Gratitude guides our mission and inspires us to give back." },
+    { title: "Integrity", desc: "We operate with honesty, transparency, and accountability in every action and decision." },
+    { title: "Service", desc: "We are committed to selfless service, putting the needs of families at the center." },
+    { title: "Empowerment", desc: "We provide resources and opportunities that help families build stronger, brighter futures." },
+    { title: "Community", desc: "We believe in the power of unity and collaboration to create lasting change globally." },
+    { title: "Respect & Dignity", desc: "Every person deserves to be treated with dignity and fairness regardless of their circumstances." }
+  ];
+
   const team = [
     {
       name: "Maria Santos",
@@ -24,97 +33,94 @@ const About = () => {
     }
   ];
 
-  const values = [
-    { title: "Compassion", desc: "We serve with empathy, kindness, and genuine care for every child and family in need." },
-    { title: "Gratitude", desc: "We believe every act of kindness matters. Gratitude guides our mission and inspires us to give back." },
-    { title: "Integrity", desc: "We operate with honesty, transparency, and accountability in every action and decision." },
-    { title: "Service", desc: "We are committed to selfless service, putting the needs of children and families at the center." },
-    { title: "Empowerment", desc: "We provide resources and opportunities that help families build stronger, brighter futures." },
-    { title: "Community", desc: "We believe in the power of unity and collaboration to create lasting change globally." },
-    { title: "Respect & Dignity", desc: "Every person deserves to be treated with dignity and fairness regardless of their circumstances." }
-  ];
-
   return (
     <div className="bg-white">
       {/* 1. NARRATIVE SECTION */}
-      <section className="py-24 px-8 border-b border-gray-100">
+      <section className="py-24 px-8">
         <div className="max-w-4xl mx-auto">
           <motion.h2 
             initial={{ opacity: 0 }} 
             whileInView={{ opacity: 1 }} 
-            className="text-green-600 font-bold uppercase tracking-widest text-xs mb-4"
+            className="text-green-600 font-bold uppercase tracking-widest text-[10px] mb-4"
           >
-            Our Story
+            Our Mission
           </motion.h2>
-          <h3 className="text-4xl md:text-5xl font-black text-black mb-10 leading-tight tracking-tighter">
-            Small acts of kindness can <span className="text-green-600 italic underline decoration-gray-200 underline-offset-8">transform lives</span>.
+          <h3 className="text-4xl md:text-6xl font-black text-black mb-10 leading-tight tracking-tighter">
+            Small acts of kindness can <span className="text-green-600 italic">transform lives</span>.
           </h3>
           <div className="space-y-6 text-lg text-gray-600 leading-relaxed font-light">
             <p>
-              Grateful Deeds Inc. was founded on a simple but powerful belief: that every child deserves a chance to grow, learn, and dream, regardless of their origin. 
+              Grateful Deeds Inc. was founded on a simple but powerful belief: that every child deserves a chance to grow, learn, and dream, regardless of where they come from.
             </p>
             <p>
-              Through compassion, service, and community partnerships, we work to bring meaningful change to underserved communities in the <strong>Philippines</strong> and the <strong>Dominican Republic</strong>. From educational support to uplifting families during difficult times, our mission is rooted in the idea that gratitude should inspire action.
+              Through compassion, service, and community partnerships, we work to bring meaningful change to underserved communities in the <strong>Philippines</strong> and the <strong>Dominican Republic</strong>.
             </p>
           </div>
         </div>
       </section>
 
-      {/* 2. TEAM SECTION (3 PEOPLE) */}
-      <section className="py-24 px-8 bg-gray-50">
-        <div className="max-w-6xl mx-auto">
-          <div className="mb-16">
-            <h2 className="text-4xl font-black text-black tracking-tighter">Meet Our Team</h2>
-            <p className="text-gray-500 mt-2 font-medium">The hearts and hands behind our global initiatives.</p>
-          </div>
-          
-          <div className="grid md:grid-cols-3 gap-12">
-            {team.map((member, i) => (
-              <motion.div 
-                key={i}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: i * 0.2 }}
-                className="group"
-              >
-                <div className="overflow-hidden rounded-2xl mb-6 aspect-[4/5] shadow-xl shadow-black/5">
-                  <img 
-                    src={member.img} 
-                    className="w-full h-full object-cover transition duration-700 group-hover:scale-110" 
-                    alt={member.name} 
-                  />
-                </div>
-                <h4 className="text-2xl font-bold text-black">{member.name}</h4>
-                <p className="text-green-700 font-bold uppercase tracking-widest text-[10px] mt-1 mb-4">{member.role}</p>
-                <p className="text-gray-600 text-sm leading-relaxed font-light">{member.bio}</p>
-              </motion.div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* 3. CORE VALUES SECTION */}
-      <section className="py-24 px-8 bg-black text-white overflow-hidden relative">
-        <div className="absolute top-0 right-0 w-96 h-96 bg-green-900/20 blur-[120px] rounded-full"></div>
+      {/* 2. CORE VALUES SECTION (Now Higher Up) */}
+      <section className="py-32 px-8 bg-black text-white relative overflow-hidden">
+        {/* Subtle background glow */}
+        <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-900/10 blur-[120px] rounded-full pointer-events-none"></div>
+        
         <div className="max-w-6xl mx-auto relative z-10">
-          <div className="text-center mb-20">
-            <h2 className="text-4xl font-black tracking-tighter">Our Core Values</h2>
-            <div className="h-1 w-12 bg-green-500 mx-auto mt-4"></div>
+          <div className="mb-20">
+            <h2 className="text-4xl font-black tracking-tighter mb-4">Our Core Values</h2>
+            <div className="h-1.5 w-16 bg-green-600"></div>
           </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-x-12 gap-y-16">
             {values.map((v, i) => (
               <motion.div 
                 key={i}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ delay: i * 0.1 }}
+                className="border-l border-gray-800 pl-6 group"
+              >
+                <span className="text-green-500 font-mono text-xs mb-3 block group-hover:translate-x-1 transition-transform">0{i + 1}</span>
+                <h4 className="text-xl font-bold mb-4">{v.title}</h4>
+                <p className="text-gray-400 text-sm leading-relaxed font-light">{v.desc}</p>
+              </motion.div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* 3. MEET THE TEAM SECTION (Now at the Bottom) */}
+      <section className="py-32 px-8 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
+            <div>
+              <h2 className="text-4xl md:text-5xl font-black text-black tracking-tighter">Meet Our Team</h2>
+              <p className="text-gray-500 mt-4 font-medium uppercase tracking-widest text-xs">The hearts behind the mission</p>
+            </div>
+            <div className="h-px flex-grow bg-gray-100 mx-8 hidden md:block mb-4"></div>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-16">
+            {team.map((member, i) => (
+              <motion.div 
+                key={i}
                 initial={{ opacity: 0 }}
                 whileInView={{ opacity: 1 }}
                 viewport={{ once: true }}
-                className="border-l border-gray-800 pl-6"
+                transition={{ delay: i * 0.2 }}
+                className="group"
               >
-                <span className="text-green-500 font-mono text-xs mb-2 block">0{i + 1}</span>
-                <h4 className="text-xl font-bold mb-3">{v.title}</h4>
-                <p className="text-gray-500 text-sm leading-relaxed">{v.desc}</p>
+                <div className="relative overflow-hidden rounded-3xl mb-8 aspect-[4/5] bg-gray-100">
+                  <img 
+                    src={member.img} 
+                    className="w-full h-full object-cover transition duration-1000 group-hover:scale-110" 
+                    alt={member.name} 
+                  />
+                  <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent opacity-0 group-hover:opacity-100 transition-opacity"></div>
+                </div>
+                <h4 className="text-2xl font-bold text-black tracking-tight">{member.name}</h4>
+                <p className="text-green-600 font-bold uppercase tracking-[0.2em] text-[10px] mt-2 mb-4">{member.role}</p>
+                <p className="text-gray-500 text-sm leading-relaxed font-light">{member.bio}</p>
               </motion.div>
             ))}
           </div>
