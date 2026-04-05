@@ -10,7 +10,7 @@ const Home = () => {
       {/* 1. HERO */}
       <section className="relative h-[85vh] flex items-center bg-black text-white px-8 overflow-hidden">
         <div className="absolute inset-0 opacity-60">
-           <img src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2000" className="w-full h-full object-cover" alt="Hero" />
+           <img src="/src/assets/3.jpeg" className="w-full h-full object-cover" alt="Hero" />
         </div>
         <div className="relative max-w-6xl mx-auto z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
