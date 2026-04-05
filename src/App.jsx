@@ -18,5 +18,4 @@ function App() {
   );
 }
 
-// THIS IS THE MISSING LINE:
 export default App;
