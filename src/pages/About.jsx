@@ -1,6 +1,11 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 
+// 1. IMPORT your team photos here
+import yismelImg from '../assets/1.jpeg';
+import erickImg from '../assets/Erick.jpeg';
+import sampaquitaImg from '../assets/Sampaquita.jpeg';
+
 const About = () => {
   const values = [
     { title: "Compassion", desc: "We serve with empathy, kindness, and genuine care for every child and family in need." },
@@ -17,19 +22,19 @@ const About = () => {
       name: "Yismel Mejía Dela Rosa",
       role: "Secretary",
       bio: "With a strong attention to detail and a commitment to professionalism, Yismel helps facilitate effective communication within the organization and ensures that all administrative processes run smoothly.",
-      img: "/src/assets/1.jpeg"
+      img: yismelImg // Use the variable
     },
     {
       name: "Erickson Brioso",
       role: "Operations Director",
       bio: "A local leader in the Dominican Republic dedicated to ensuring every resource reaches the families who need it most.",
-      img: "/src/assets/Erick.jpeg"
+      img: erickImg // Use the variable
     },
     {
       name: "Sampaquita Ramos",
       role: "Program Director/Chief Financial Officer",
       bio: "Sampaquita manages our educational initiatives in the Philippines, bridging the gap between local schools and global support.",
-      img: "/src/assets/Sampaquita.jpeg"
+      img: sampaquitaImg // Use the variable
     }
   ];
 
@@ -59,9 +64,8 @@ const About = () => {
         </div>
       </section>
 
-      {/* 2. CORE VALUES SECTION (Now Higher Up) */}
+      {/* 2. CORE VALUES SECTION */}
       <section className="py-32 px-8 bg-black text-white relative overflow-hidden">
-        {/* Subtle background glow */}
         <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-green-900/10 blur-[120px] rounded-full pointer-events-none"></div>
         
         <div className="max-w-6xl mx-auto relative z-10">
@@ -89,7 +93,7 @@ const About = () => {
         </div>
       </section>
 
-      {/* 3. MEET THE TEAM SECTION (Now at the Bottom) */}
+      {/* 3. MEET THE TEAM SECTION */}
       <section className="py-32 px-8 bg-white">
         <div className="max-w-6xl mx-auto">
           <div className="flex flex-col md:flex-row md:items-end justify-between mb-20 gap-6">
