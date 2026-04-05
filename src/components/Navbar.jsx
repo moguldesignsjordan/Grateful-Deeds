@@ -22,8 +22,7 @@ const Navbar = () => {
           
           <Link to="/" className="flex items-center gap-2 group">
             <div className="relative">
-              <img src={logo} alt="Grateful Deeds" className="h-10 md:h-14 w-auto object-contain transition-all duration-300 group-hover:brightness-110" />
-              <span className="absolute -top-1 -right-1 w-2 h-2 bg-green-500 rounded-full animate-pulse"></span>
+              <img src={logo} alt="Grateful Deeds" className="h-12 md:h-14 w-auto object-contain transition-all duration-300 group-hover:brightness-110" />
             </div>
           </Link>
 

@@ -2,6 +2,12 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
+// 1. IMPORT your local images here
+import heroImg from '../assets/3.jpeg'; 
+// If you have local images for the DR/Philippines cards, import those too:
+// import drImg from '../assets/gd1.jpeg';
+// import phImg from '../assets/gd2.jpeg';
+
 const Home = () => {
   const [email, setEmail] = useState("");
 
@@ -10,7 +16,8 @@ const Home = () => {
       {/* 1. HERO */}
       <section className="relative h-[85vh] flex items-center bg-black text-white px-8 overflow-hidden">
         <div className="absolute inset-0 opacity-60">
-           <img src="/src/assets/3.jpeg" className="w-full h-full object-cover" alt="Hero" />
+           {/* 2. USE the variable name here, not a string path */}
+           <img src={heroImg} className="w-full h-full object-cover" alt="Hero" />
         </div>
         <div className="relative max-w-6xl mx-auto z-10">
           <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8 }}>
@@ -41,6 +48,7 @@ const Home = () => {
       <section className="py-24 px-8">
         <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-8">
           <div className="group relative overflow-hidden rounded-3xl h-[450px]">
+            {/* These Unsplash links should work fine because they are external URLs */}
             <img src="https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?q=80&w=1000" className="w-full h-full object-cover group-hover:scale-105 transition duration-700" alt="DR" />
             <div className="absolute inset-0 bg-gradient-to-t from-black/90 to-transparent p-10 flex flex-col justify-end">
               <h3 className="text-white text-3xl font-bold">Dominican Republic</h3>
