@@ -14,22 +14,22 @@ const About = () => {
 
   const team = [
     {
-      name: "Maria Santos",
-      role: "Executive Director",
-      bio: "With over 15 years in international development, Maria leads our strategic vision across the Caribbean and Southeast Asia.",
-      img: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?q=80&w=800"
+      name: "Yismel Mejía Dela Rosa",
+      role: "Secretary",
+      bio: "With a strong attention to detail and a commitment to professionalism, Yismel helps facilitate effective communication within the organization and ensures that all administrative processes run smoothly.",
+      img: "/src/assets/1.jpeg"
     },
     {
-      name: "Papo",
+      name: "Erickson Brioso",
       role: "Operations Director",
       bio: "A local leader in the Dominican Republic dedicated to ensuring every resource reaches the families who need it most.",
-      img: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?q=80&w=800"
+      img: "/src/assets/Erick.jpeg"
     },
     {
-      name: "Elena Reyes",
-      role: "Program Coordinator",
-      bio: "Elena manages our educational initiatives in the Philippines, bridging the gap between local schools and global support.",
-      img: "https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800"
+      name: "Sampaquita Ramos",
+      role: "Program Director/Chief Financial Officer",
+      bio: "Sampaquita manages our educational initiatives in the Philippines, bridging the gap between local schools and global support.",
+      img: "/src/assets/Sampaquita.jpeg"
     }
   ];
 
