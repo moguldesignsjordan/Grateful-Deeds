@@ -2,8 +2,10 @@ import React, { useState, useRef } from 'react';
 import { motion, useScroll, useTransform, useInView } from 'framer-motion';
 import { Link } from 'react-router-dom';
 
-// Import your local images
+// Import ALL local images at the top
 import heroImg from '../assets/3.jpeg';
+import drImg from '../assets/gd2.jpeg';  // Dominican Republic image
+import phImg from '../assets/gd1.jpeg';  // Philippines image
 
 // Animated counter component
 const AnimatedCounter = ({ value, suffix = '', prefix = '' }) => {
@@ -64,14 +66,14 @@ const Home = () => {
     {
       country: 'Dominican Republic',
       description: 'Providing essential resources, nutrition programs, and community development initiatives.',
-      image: 'https://images.unsplash.com/photo-1594608661623-aa0bd3a69d98?q=80&w=1200',
+      image: drImg,
       stats: '250+ Families',
       color: 'from-amber-500/80'
     },
     {
       country: 'Philippines',
       description: 'Educational support, school supplies, and scholarship programs for underprivileged youth.',
-      image: '/src/assets/gd1.jpeg',
+      image: phImg,
       stats: '300+ Students',
       color: 'from-emerald-500/80'
     }

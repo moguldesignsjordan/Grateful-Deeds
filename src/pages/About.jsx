@@ -7,6 +7,9 @@ import yismelImg from '../assets/1.jpeg';
 import erickImg from '../assets/Erick.jpeg';
 import sampaquitaImg from '../assets/Sampaquita.jpeg';
 
+// Import story section image
+import storyImg from '../assets/GD3.jpeg';
+
 // Section reveal animation wrapper
 const RevealSection = ({ children, className = '', delay = 0 }) => {
   const ref = useRef(null);
@@ -206,7 +209,7 @@ const About = () => {
                 {/* Main Image */}
                 <div className="relative rounded-3xl overflow-hidden aspect-[4/5] shadow-2xl">
                   <img 
-                    src="/src/assets/GD3.jpeg" 
+                    src={storyImg} 
                     alt="Children learning" 
                     className="w-full h-full object-cover"
                   />
